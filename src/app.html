@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%svelte.assets%/favicon.png" />
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="node_modules/jquery/dist/jquery"></script> -->
+  <!-- <script src="node_modules/popper.js/dist/umd/popper.js"></script> -->
+
+
+    <!-- <link rel='stylesheet' href='/bootstrap.min.css'> -->
+
+    <!-- <script src="/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+      <link rel='stylesheet' href='/global.css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%svelte.head%
+    <script>
+      console.log('hi')
+    import * as mf from 'jquery';
+    mf('body').click(() => console.log('hi2'));
+      //  $('body').click(() => console.log('hi2'));
+      // $j(() => {
+      //     window.alert('i am here')
+      //     // $('body').click(() => console.log('hi2'));
+      //     // works fine
+      //   });
+    </script>
+	</head>
+	<body>
+
+		<div>%svelte.body%</div>
+	</body>
+
+
+</html>
