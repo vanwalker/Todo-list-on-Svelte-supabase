@@ -2,11 +2,10 @@
 
   import { goto } from "$app/navigation";
   import Navbar from "$lib/Navbar.svelte";
-  import {supabase} from "$lib/supabaseClient"
-
+  import {supabase} from "$lib/supabaseClient";
   import Todo from "$lib/Todo.svelte";
   import { onMount } from "svelte";
-  import {user} from "$lib/sessionStore"
+  import {user} from "$lib/sessionStore";
   let todos = [];
   let newTask = "";
 
